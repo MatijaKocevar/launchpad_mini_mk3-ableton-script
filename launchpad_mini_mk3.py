@@ -151,7 +151,7 @@ class launchpad_mini_mk3(ControlSurface):   # Make sure you update the name
         self._device.name = 'Device_Component'
         device_bank_buttons = []
         device_param_controls = []
-        for index in range(64):
+        for index in range(8):
             device_param_controls.append(self._ctrl_map[PARAMCONTROL[index]])
             device_bank_buttons.append(self._note_map[DEVICEBANK[index]])
         if None not in device_bank_buttons:
